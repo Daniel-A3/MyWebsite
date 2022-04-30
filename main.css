@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif; 
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Buttons*/
+
+.button {
+    position: relative;
+    color: rgb(0, 160, 125);
+    display: inline-block;
+    font-size: 1.14rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.3em;
+    transition: color 0.25s;
+    top: 3em;
+}
+
+.button:hover,
+.button:focus {
+    color: rgb(0, 114, 89);
+}
+
+/*Header*/
+
+.title {
+    font-size: 1.8rem;
+}
+
+.span {
+    font-weight: 300;
+    display: block;
+    font-size: 1.7rem;
+}
+
+header {
+    position: absolute;
+    margin: 1em;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    margin: 0.5em 0 1em 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+nav a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 0.5em;
+    margin: 0.3em;
+    color: white;
+    transition: color 0.35s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(134, 134, 134);
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        font-size: 1.7rem;
+        margin: 0 0.6em;
+    }
+
+    .home-about {
+        background-image: url(code\ image.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 80px 70px;
+        margin: 0 -3em;
+    }
+
+    .home-about-textbox {
+        margin: 0 -1em;
+        width: 40%;
+    }
+    
+    .home-about-textbox h1 {
+        position: absolute;
+        margin-left: -29.5%;
+        transform: translateX();
+        margin-top: 3.17em;
+        padding: 0 0.25em;
+    }
+} 
+
+@media (min-width:70rem) {
+    .title {
+        font-size: 2.9rem;
+    }
+
+    .logo {
+        max-width: 350px;
+    }
+
+    .span {
+        font-size: 2.8rem;
+    }
+
+    .home-about-textbox h1 {
+        position: absolute;
+        margin-left: -29.5%;
+        transform: translateX();
+        margin-top: 5.7em;
+        padding: 0 0.25em;
+    }
+}
+
+
+/*Home Text*/
+
+.home-text {
+    background-image: linear-gradient(45deg, rgb(98, 0, 255), rgb(255, 94, 0));
+    padding: 12em 0;
+    background-size: 400%;
+    animation: bg-animation 40s infinite alternate;
+    color: rgb(209, 209, 209);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes bg-animation {
+    20% {background-position: left}
+    80% {background-position: right}
+}
+
+/*Home About*/
+
+.home-about-textbox {
+    font-size: 1.4rem;
+    background-color: #232323;
+    color: white;
+    padding: 3em;
+    margin: 0 -1em;
+    outline: 1px solid #5900ff;
+    outline-offset: -2.5em;
+}
+
+.home-about-textbox h1 {
+    color: #5900ff;
+    position: absolute;
+    background: #232323;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16.98em;
+    padding: 0 0.25em;
+}
+
+
